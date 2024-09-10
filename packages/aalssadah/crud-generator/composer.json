@@ -1,0 +1,25 @@
+{
+    "name": "aalssadah/crud-generator",
+    "description": "this package uses for simplify generating the crud opreations",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Aalssadah\\CrudGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aalssadah\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "ala",
+            "email": "ala.alssadah@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
