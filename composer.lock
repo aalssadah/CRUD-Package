@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "179409daaa5e8a1097efeb833e2c2388",
     "packages": [
         {
             "name": "brick/math",
@@ -5607,6 +5607,39 @@
     ],
     "packages-dev": [
         {
+            "name": "aalssadah/crud-generator",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/aalssadah/crud-generator",
+                "reference": "6a6a36ad0f18776dfe16c29b7855dfc9e4d44930"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aalssadah\\CrudGenerator\\CrudGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aalssadah\\CrudGenerator\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ala",
+                    "email": "ala.alssadah@gmail.com"
+                }
+            ],
+            "description": "this package uses for simplify generating the crud opreations",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.23.1",
             "source": {
@@ -7748,7 +7781,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "aalssadah/crud-generator": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
